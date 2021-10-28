@@ -17,7 +17,7 @@ body {
 
 }
 
-div.pricing{
+.pricing{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@ div.pricing{
     flex-direction: column;
 }
 
-div.card > header{
+.card > header{
     background-color: #288088;
     border: solid #45ADAD 2px;
     padding-top: 20px;
@@ -39,11 +39,11 @@ div.card > header{
     border-radius: 7px 7px 0px 0px;
 }
 
-div.card{
+.card{
     flex-basis: 450px; 
 }
 
-div.gallery *{
+.gallery img{
 
     border: solid 10px #50C7C7;
     margin: 10px;
@@ -51,7 +51,7 @@ div.gallery *{
 
 }
 
-div.gallery {
+.gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -79,9 +79,9 @@ header img {
 
     body > header {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
         position: sticky;
         top: 0;
         left: 0;
@@ -92,7 +92,7 @@ header img {
         flex-direction: row; 
     }
 
-    div.card {
+    .card {
         flex-basis: 250px; 
     }
 
@@ -120,7 +120,7 @@ header img {
         justify-content: space-around;
     }
 
-    div.card {
+    .card {
         border: 2px solid #45ADDD;
         flex-basis: 250px; 
     }
@@ -142,7 +142,7 @@ header img {
         content: "👍"
     }
 
-    .card li:nth-of-type(odd)::after{
+    .card li:nth-of-type(odd)::before{
         content: "👍"
     }
 }
